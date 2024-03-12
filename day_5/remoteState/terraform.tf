@@ -11,6 +11,13 @@ terraform {
         version = "5.42.0"
     }
   }
+
+  backend "s3" {
+    bucket = "pcs-banking-tf-state"
+    key = "finance/terraform.tfstate"
+    region = "ca-central-1"
+    dynamodb_table = "state-locking"
+  }
 }
 
 provider "aws" {

@@ -10,10 +10,10 @@ variable "project_name" {
 
 variable "team" {
   type = string
-  default = "Alpha"
+  default = "alpha"
 }
 
 variable "environment" {
   type = string
-  default = "Development"
+  default = "development"
 }
