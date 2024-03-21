@@ -1,0 +1,40 @@
+variable data types in terraform:
+---------------------------------
+
+string => Text data e.g "name.txt"
+
+number => Numeric data e.g. 123,
+
+bool => Boolean: True/False
+
+any => Any data type
+
+list => Array of data e.g. ["name.txt", "age.txt"]
+list of objects => [{name: "John", age: 30}, {name: "Jane", age: 25}]
+
+map => Key-value pairs e.g. {"name": "John", "age": 30}
+map of objects => [{name: "John", age: 30}, {name: "Jane", age: 25}]
+
+tuple => Array of data e.g. [1,2,3]
+tuple of objects => [{name: "John", age: 30}, {name: "Jane", age: 25}]
+Tuples do not support duplicate data
+
+objects => [{name: "John", age: 30}, {name: "Jane", age: 25}]
+Objects can have nested objects and they are mutable
+
+
+Using variables (order in which terraform will check)
+--------------------------------
+
+1. via cmd line by using "-vars" option.
+
+2. By using env vars: e.g export TF_VAR_<<var-name>>=<<value>>
+
+3. "*.tfvars" files or "*.tfvars.json"
+$ terraform apply -var-file *.tfvars // run this cmd for terraform to load the file
+
+4. By using the "terraform.tfvars" or "*.auto.tfvars" files - terraform will automatically load these files.
+
+5. By using default value
+
+6. Asking for a value in the cmd line 
