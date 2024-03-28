@@ -1,0 +1,23 @@
+So far, we have used the the following fxns:
+.. file ()
+.. length()
+.. toset()
+.. merge ()
+
+SOME MORE
+
+1. Numeric Functions
+
+max(), ceil, floor, min, 
+
+2. String Functions
+split, upper, lower, title, subst
+
+3. List Functions
+
+append, insert, remove, pop, reverse, sort, extend, count, index, clear, copy, element
+
+4. Map Functions
+
+keys, values, lookup
+// lookup is a function that takes a key and returns the value. it also allows u to set default values

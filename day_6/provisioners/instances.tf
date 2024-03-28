@@ -33,7 +33,7 @@ resource "aws_instance" "web3" {
   #key_name = "nok" //or the option below
   key_name = data.aws_key_pair.nok.key_name
   provisioner "remote-exec" {
-
+    on_failure = continue
     inline = [ 
       "sudo apt update",
       "sudo apt install -y nginx",
