@@ -1,0 +1,30 @@
+// Operators and Conditional Expressions
+
+Numeric Operators: (+ - * /)
+
+Equality Operators: (returns true or false)
+== (equal)
+!= (not equal)
+
+Comparison Operators: (returns true or false)
+> (greater than)
+< (less than)
+>= (greater than or equal to)
+<= (less than or equal to)
+
+Logical Operators: (returns true or false)
+    && (and)
+    || (or) 
+    !  (not)    
+
+Conditional Expressions:    
+    if (condition) {
+        // code to execute if condition is true
+    } else {
+        // code to execute if condition is false    
+    }       
+    
+    if (condition) {
+        
+    }
+
