@@ -4,6 +4,7 @@ resource "aws_instance" "app_server" {
 
   tags = {
     Name = "${var.app_region}-app-server"
+    Environment = "produuction"
   }
 
   depends_on = [ 
